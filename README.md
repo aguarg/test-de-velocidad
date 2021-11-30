@@ -1,4 +1,4 @@
-# test-velocidad
+# Test de velocidad
 Un pequeño script en Python para determinar la disponibilidad y velocidad de la conexión a internet.
 Informa el ping, la velocidad de subida y la velocidad de bajada.
 
