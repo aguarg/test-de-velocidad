@@ -1,11 +1,5 @@
 #Script para medir la velocidad de internet:
 
-#HACER:
-#mostrar la info del servidor al que estoy conectado
-# buscar: getting isp info
-
-
-
 from decimal import Decimal
 import speedtest   
   
