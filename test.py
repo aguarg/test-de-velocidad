@@ -42,8 +42,22 @@ subida = str(round(subida / 1e+6,2))
 
 #Ping
 ping = str(round(float(st.results.ping),2))
-  
-  
+
+
+
+
+
+# Obtener el mejor servidor:
+mejor_servidor = st.get_best_server()
+
+
+
+
+# Obtener el servidor mas cercano:
+servidor_mas_cercano = st.get_closest_servers()
+
+
+
 
 
 
@@ -55,7 +69,23 @@ print("-----------------------------------------------")
 print("Velocidad de bajada: " + bajada + " Mbits/s")
 print("Velocidad de subida: " + subida + " Mbits/s")
 print("Ping: " + ping + " ms")  
-print("-------------- Test finalizado ----------------") 
+ 
+
+print("-----------------------------------------------")
+print("Mejor servidor:")
+for key, value in mejor_servidor.items():
+    
+    print(key, ' : ', value)
+
+print("-----------------------------------------------")  
+print("Servidor mas cercano:")
+for key, value in servidor_mas_cercano[1].items():
+    
+    print(key, ' : ', value)  
+
+
+
+print("-------------- Test finalizado ----------------")    
 
 
   
